@@ -1,0 +1,170 @@
+// | -------------------------------------------------------------
+// | Font
+// | -------------------------------------------------------------
+
+@use "breakpoint" as *;
+@use "outline" as *;
+@use "size" as *;
+@use "space" as *;
+
+
+/* Register our custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Register our custom font family and tell the browser where to find it. */
+@font-face {
+  font-family: 'Archivo';
+  src: url('../../fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('../../fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivo';
+  src: url('../../fonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  color: var(--font-color);
+  background-color: var(--background);
+  font-family: var(--font-family-default);
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  @include size-18;
+
+  a {
+    color: var(--link-color);
+
+    // &:visited {
+    //   color: var(--link-clicked-color);
+    // }
+
+    &:hover,
+    &:focus {
+      color: var(--action-color);
+      text-decoration: none;
+    }
+  }
+
+  :where(main) a {
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  :where(h1, h2, h3) {
+    font-family: var(--font-family-special);
+  }
+
+  h1 {
+    font-weight: 900;
+    line-height: 2em;
+  }
+  
+  h2 {
+    font-weight: 700;
+    line-height: 2em;
+  
+    &.blue-heading {
+    color: #67C5EC;
+    }
+    &.purple-heading {
+    color: #C08BC1;
+    }
+  }
+
+
+
+     h3 {
+       font-weight: 900;
+       line-height: 2em;
+      &.pink-heading {
+          color: #EC898B;
+        }
+      &.purple-heading {
+          color: #963D97;
+        }
+     }
+  h4,
+  h5,
+  h6 {
+    font-weight: 600;
+  }
+
+  p, li {
+      line-height: 1.75em;
+  }
+
+  h1 {
+    @include size-36;
+
+    @include breakpoint(medium) {
+      @include size-60;
+    }
+  }
+
+  h2 {
+    @include size-30;
+
+    @include breakpoint(medium) {
+      @include size-48;
+    }
+  }
+
+  h3 {
+    @include size-20;
+
+    @include breakpoint(medium) {
+      @include size-24;
+    }
+  }
+
+  h4 {
+    @include size-20;
+
+    @include breakpoint(medium) {
+      @include size-24;
+    }
+  }
+
+  h5 {
+    @include size-18;
+
+    @include breakpoint(medium) {
+      @include size-20;
+    }
+  }
+
+  h6 {
+    @include size-16;
+
+    @include breakpoint(medium) {
+      @include size-18;
+    }
+  }
+}
+
+.break-word {
+  overflow-wrap: break-word;
+}
+
+

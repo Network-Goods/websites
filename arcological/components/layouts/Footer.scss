@@ -1,0 +1,50 @@
+@use "../../assets/scss/base/border.scss" as *;
+@use "../../assets/scss/base/breakpoint.scss" as *;
+@use "../../assets/scss/base/elevation.scss" as *;
+@use "../../assets/scss/base/outline.scss" as *;
+@use "../../assets/scss/base/size.scss" as *;
+
+#footer-navigation {
+  > .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &.is-desktop {
+    .desktop-menu {
+      visibility: visible;
+      z-index: 0;
+      position: static;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav {
+    @include size-18;
+
+    > ul {
+      display: flex;
+      gap: 2.5rem;
+      // text-decoration: underline;
+
+    //   .is-active {
+        // text-decoration: underline;
+    //   }
+    }
+  }
+}
+
+.logo-footer {
+  max-width: 12ch;
+  position: relative;
+  left: -20%;
+  @media screen and (max-width: 1250px) {
+    left: 0;
+  }
+}
