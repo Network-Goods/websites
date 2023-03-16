@@ -14,3 +14,5 @@ export const PLASMIC_PROJECT_ID = requireEnv(
   process.env.PLASMIC_PROJECT_ID,
   "PLASMIC_PROJECT_ID",
 );
+
+console.log('PLASMIC_PROJECT_API_TOKEN', PLASMIC_PROJECT_API_TOKEN);
