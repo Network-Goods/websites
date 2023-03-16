@@ -1,9 +1,9 @@
-export const requireEnv = (value: string | undefined, identifier: string) => {
+export const requireEnv = (value: string | undefined, identifier: string): string => {
   // if (!value) {
   //   throw new Error(`Required env var ${identifier} does not exist`);
   // }
-  
-  return value;
+
+  return <any>value;
 };
 
 export const PLASMIC_PROJECT_API_TOKEN = requireEnv(
