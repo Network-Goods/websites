@@ -1,4 +1,3 @@
-import '../styles/globals.css';
 import Document, {
     DocumentContext,
     DocumentInitialProps,
