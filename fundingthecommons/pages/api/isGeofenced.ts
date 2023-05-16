@@ -10,7 +10,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-
+  const keys = Object.keys(req.headers);
 
   // Australia:
   // Hong Kong: 
@@ -20,5 +20,5 @@ export default function handler(
   // Thailand: 
 
   const countryCode = req.headers['x-vercel-ip-country'] || 'not set';
-  res.status(200).json({ isGeofenced: false, countryCode: countryCode })
+  res.status(200).json({ isGeofenced: false, countryCode: keys })
 }
