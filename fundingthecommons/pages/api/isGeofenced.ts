@@ -19,6 +19,6 @@ export default function handler(
   // Japan:
   // Thailand: 
 
-  const countryCode = req.headers['X-Vercel-IP-Country'] || 'not set';
+  const countryCode = req.headers['x-vercel-ip-country'] || 'not set';
   res.status(200).json({ isGeofenced: false, countryCode: countryCode })
 }
