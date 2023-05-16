@@ -29,7 +29,7 @@ function getIsGeofenced(req: NextApiRequest): boolean {
   // Japan: JP
   // Thailand: TH
 
-  const blockedCountries = ['AU', 'HK', 'IN', 'ID', 'JP', 'TH', 'CA'];
+  const blockedCountries = ['AU', 'HK', 'IN', 'ID', 'JP', 'TH', 'US'];
 
   return blockedCountries.includes(countryCode);
 }
