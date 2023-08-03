@@ -20,7 +20,7 @@ import Document, {
       return (
         <Html>
           <Head>
-            <link rel="shortcut icon" href="/favicon.svg" />
+            <link rel="shortcut icon" href="/favicon.png" />
           </Head>
           <body>
             <Main />
