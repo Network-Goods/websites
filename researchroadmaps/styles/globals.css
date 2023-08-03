@@ -13,3 +13,19 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'NationalPark';
+  src: url('/fonts/NationalPark-Regular.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BaiJamjuree';
+  src: url('/fonts/BaiJamjuree-Regular') format('ttf');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
