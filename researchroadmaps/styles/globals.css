@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'NationalPark';
+  font-family: 'National Park';
   src: url('/fonts/NationalPark-Regular.woff') format('woff');
   font-weight: lighter;
   font-style: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'BaiJamjuree';
+  font-family: 'Bai Jamjuree';
   src: url('/fonts/BaiJamjuree-Regular') format('ttf');
   font-weight: lighter;
   font-style: normal;
